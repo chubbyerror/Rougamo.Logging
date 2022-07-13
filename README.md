@@ -10,14 +10,16 @@ DynamicProxy是运行时生成一个代理类，通过方法重写的方式执�
 Rougamo.Logging 是基于肉夹馍静态织入编写的快速特性标记日志扩展工具，使用本扩展可以快速的为你的程序绑定和解除日志。
 
 
-
+标记和注册扩展
 ```csharp
 //使用特性标记日志
 [assembly: Rougamo.Logging.Attribute.Logging]
 
 //极简注册日志方法
 "testrougamo".UseRougamoLog<Logger>();
-
+```
+实现日志接口
+```csharp
 //您仅需要实现日志接口
 using System;
 using System.Collections.Generic;
@@ -36,7 +38,9 @@ namespace yournamespace
         }
     }
 }
-
+```
+允许实现自己的IFormatter以定制自己的日志需求
+```csharp
 //允许您实现自己的IFormatter以定制自己的日志需求
 using Newtonsoft.Json;
 using System;
@@ -77,3 +81,6 @@ namespace yournamespace
         }
     }
 }
+```
+
+更多细节请访问https://github.com/inversionhourglass/Rougamo 肉夹馍 
