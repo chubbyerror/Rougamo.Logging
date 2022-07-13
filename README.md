@@ -84,4 +84,4 @@ namespace yournamespace
 }
 ```
 
-更多细节请访问https://github.com/inversionhourglass/Rougamo 肉夹馍 
+更多细节请探索 https://github.com/inversionhourglass/Rougamo 肉夹馍 
