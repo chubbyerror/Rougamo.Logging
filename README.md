@@ -7,4 +7,4 @@ DynamicProxy是运行时生成一个代理类，通过方法重写的方式执�
 详见https://github.com/inversionhourglass/Rougamo
 
 ### Rougamo.Logging是什么
-Rougamo.Logging 是基于肉夹馍静态织入编写的快速特性标记日志扩展工具，使用本方法可以快速的为你的程序绑定和解除日志。
+Rougamo.Logging 是基于肉夹馍静态织入编写的快速特性标记日志扩展工具，使用本扩展可以快速的为你的程序绑定和解除日志。
