@@ -30,7 +30,7 @@ using System.Threading.Tasks;
 
 namespace yournamespace
 {
-    [Rougamo.IgnoreMo]
+    [Rougamo.IgnoreMo]//ILogger接口的实现类必须添加IgnoreMo特性或继承其特性的其他特性
     public class Logger : Rougamo.Logging.Logger.ILogger
     {
         public void Log(int level, string logcontext)
@@ -51,7 +51,7 @@ using System.Text;
 
 namespace yournamespace
 {
-    [IgnoreMo]
+    [Rougamo.IgnoreMo]//IFormatter接口的实现类必须添加IgnoreMo特性或继承其特性的其他特性
     internal class Formatter : Rougamo.Logging.Formatter.IFormatter
     {
         public string FromatContextWithArguments(Context.MethodContext context)
